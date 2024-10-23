@@ -36,7 +36,7 @@ export default function QuoteDisplay() {
         }
       } catch (error) {
         console.error('Error fetching quote:', error);
-        setQuote('Error fetching quote. Please try again later.');
+        setQuote('The stars are not aligned today. Please try again later.');
       }
 
       setLoading(false);
@@ -48,7 +48,7 @@ export default function QuoteDisplay() {
   const shareQuote = () => {
     if (navigator.share) {
       navigator.share({
-        title: 'Daily Wisdom Quote',
+        title: 'Daily Dose of Wisdom',
         text: quote,
         url: window.location.href,
       });

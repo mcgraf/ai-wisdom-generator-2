@@ -9,7 +9,7 @@ const model = genAI.getGenerativeModel({
 
 export async function GET() {
   try {
-    const prompt = 'Generate a unique and inspiring wisdom quote.';
+    const prompt = 'Generate a wisdom quote.';
     const result = await model.generateContent(prompt);
 
     const quote = result.response.text();
