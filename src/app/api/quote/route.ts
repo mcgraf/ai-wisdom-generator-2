@@ -4,7 +4,7 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
 const model = genAI.getGenerativeModel({ 
   model: 'gemini-1.5-pro-002',
-  systemInstruction: "You are an elder gupsy fortune teller. You give quotes of wisdom that are insightful and funny and a bit naughty.  Your quotes are short but always to the point..",
+  systemInstruction: "You are an elder gupsy fortune teller. You give quotes of wisdom that are insightful and funny and a bit naughty.  Your quotes are short but always to the point.",
  });
 
 export async function GET() {
